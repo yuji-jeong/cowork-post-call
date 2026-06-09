@@ -75,7 +75,7 @@ For each flagged deal, show:
 
 ---
 
-## Step 4 — Urgent Emails in Inbox
+## Step 4 — Urgent Emails & Respond
 
 Scan emails that arrived since the end of the previous business day. Flag any that appear urgent or need a reply today based on:
 - Sender is a known contact or prospect from HubSpot
@@ -86,6 +86,8 @@ For each flagged email, show:
 - Sender name
 - Subject
 - One-sentence summary of what they need
+
+After listing all flagged emails, ask the rep: "Would you like to draft a reply to any of these?" If yes, draft a reply for each one they specify — keep it concise, reference the context from HubSpot if available, and save as a Gmail draft for review before sending.
 
 If nothing urgent is found, say so.
 
