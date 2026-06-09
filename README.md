@@ -30,22 +30,22 @@ flowchart LR
         style inputs fill:none,stroke:none
 
         CW1["Claude Co-work"]
-        HS_STAGE["HubSpot\nDeal Stage"]
-        HS_CRM["HubSpot\nCRM Fields"]
+        HS_STAGE["Move\nDeal Stage"]
+        HS_CRM["Populate\nCRM Fields"]
         HS_PAIN["Pain Points"]
         HS_NEXT["Next Steps"]
         HS_OTHER["Business Details"]
-        HS_TASK["HubSpot\nTask"]
-        GM1["Gmail\nDraft"]
+        HS_TASK["Create\nFollow-up Task"]
+        GM1["Draft\nFollow-up Email"]
 
         FLY --> CW1
         HS_IN --> CW1
-        CW1 -->|"confirm first"| HS_STAGE
+        CW1 -->|"asks you first"| HS_STAGE
         CW1 --> HS_CRM
         HS_CRM --> HS_PAIN
         HS_CRM --> HS_NEXT
         HS_CRM --> HS_OTHER
-        CW1 -->|"confirm first"| HS_TASK
+        CW1 -->|"asks you first"| HS_TASK
         CW1 --> GM1
     end
 
