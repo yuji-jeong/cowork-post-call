@@ -3,7 +3,7 @@ name: post-call
 description: "After a sales call, pull the meeting transcript and the relevant HubSpot deal to assess deal stage progression, populate deal fields, create a follow-up task, and draft a personalised follow-up email. Confirms with the rep before making any changes."
 license: MIT
 metadata:
-  author: yuji-AIML
+  author: yuji-jeong
   version: "1.0"
   category: post-call
 ---
