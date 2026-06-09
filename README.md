@@ -104,7 +104,7 @@ Run this right after a sales call ends.
 2. Finds the deal in HubSpot and checks the current stage
 3. Assesses whether the deal should move to the next stage — shows you the reasoning and asks before changing anything
 4. Populates the deal card: next steps, pain points, and business-specific details you defined in Your Business Context
-5. Creates a follow-up task in HubSpot with a due date based on how the call went
+5. Creates a follow-up task in HubSpot with a due date based on how the call went — default timing is 2–3 days for high momentum, 1–2 weeks for cautious interest, 2–3 weeks for early stage. **Adjust these ranges in the skill file to match your sales cycle.**
 6. Drafts a personalised follow-up email in Gmail
 
 **Note on email sending:** Co-work saves the email as a Gmail draft. It cannot schedule sends automatically — the skill will tell you when to send it based on the task due date, and you send it manually from Gmail.
@@ -113,11 +113,20 @@ Run this right after a sales call ends.
 
 ---
 
-### `/catch-up` *(coming soon)*
+### `/catch-up`
 
 Run this at the start of your day.
 
 Surfaces everything that needs your attention in one place: follow-up tasks due today, Gmail drafts ready to send, at-risk deals with no recent activity, urgent emails that came in overnight, and a list of today's meetings.
+
+**What it does, step by step:**
+1. Lists Gmail drafts that are unsent and flags any that are overdue
+2. Pulls HubSpot tasks due today
+3. Flags at-risk deals — default thresholds are 14 days no activity and 30 days no stage movement. **Adjust these in the skill file to match your sales cycle.**
+4. Surfaces urgent emails that arrived since the previous business day
+5. Lists today's meetings with times from Google Calendar
+
+→ [Download catch-up-SKILL.md](./catch-up-SKILL.md)
 
 ---
 
