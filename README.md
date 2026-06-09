@@ -15,6 +15,57 @@ Claude Co-work skills for sales reps to automate post-call admin — no extra to
 
 ---
 
+## How it works
+
+```mermaid
+flowchart LR
+    subgraph pc ["⚡ /post-call — after every call"]
+        direction LR
+
+        subgraph inputs [" "]
+            direction TB
+            FLY["🎙️ Firefly\nTranscript"]
+            HS_IN["HubSpot\nDeal State"]
+        end
+        style inputs fill:none,stroke:none
+
+        CW1["Claude Co-work"]
+        HS_STAGE["HubSpot\nDeal Stage"]
+        HS_CRM["HubSpot\nCRM Fields"]
+        HS_PAIN["Pain Points"]
+        HS_NEXT["Next Steps"]
+        HS_OTHER["Business Details"]
+        HS_TASK["HubSpot\nTask"]
+        GM1["Gmail\nDraft"]
+
+        FLY --> CW1
+        HS_IN --> CW1
+        CW1 -->|"confirm first"| HS_STAGE
+        CW1 --> HS_CRM
+        HS_CRM --> HS_PAIN
+        HS_CRM --> HS_NEXT
+        HS_CRM --> HS_OTHER
+        CW1 -->|"confirm first"| HS_TASK
+        CW1 --> GM1
+    end
+
+    subgraph cu ["☀️ /catch-up — every morning"]
+        direction LR
+        HS4["HubSpot\nTasks & Deals"]
+        GM2["Gmail\nDrafts & Inbox"]
+        GC["📅 Google Calendar\nMeetings"]
+        CW2["Claude Co-work"]
+        OUT["Morning\nBriefing"]
+
+        HS4 --> CW2
+        GM2 --> CW2
+        GC --> CW2
+        CW2 --> OUT
+    end
+```
+
+---
+
 ## Before you start
 
 You need the following connectors active in Claude Co-work:
