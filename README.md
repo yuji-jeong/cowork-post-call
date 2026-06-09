@@ -56,11 +56,21 @@ flowchart LR
         GC["📅 Google Calendar\nMeetings"]
         CW2["Claude Co-work"]
         OUT["Morning\nBriefing"]
+        CU1["Send Drafted Emails\n(Gmail)"]
+        CU2["Due Tasks Today\n(HubSpot)"]
+        CU3["Flag At-Risk Deals\n(HubSpot)"]
+        CU4["Urgent Emails & Respond\n(Gmail)"]
+        CU5["Your Schedule Today\n(Google Calendar)"]
 
         HS4 --> CW2
         GM2 --> CW2
         GC --> CW2
         CW2 --> OUT
+        OUT --> CU1
+        OUT --> CU2
+        OUT --> CU3
+        OUT --> CU4
+        OUT --> CU5
     end
 ```
 
