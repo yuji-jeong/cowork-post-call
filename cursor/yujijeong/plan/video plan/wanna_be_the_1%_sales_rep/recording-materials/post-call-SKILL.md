@@ -120,7 +120,10 @@ Do not copy the transcript verbatim. Extract only what is useful and actionable.
 
 ## Step 5 — Create a Follow-Up Task in HubSpot
 
-Before creating the task, call `get_user_details` to retrieve the current user's HubSpot owner ID. Set this as the task owner so the task appears on the deal board.
+Before creating the task, retrieve the HubSpot owner ID to assign the task:
+1. Call `get_user_details` to get the current user's HubSpot owner ID.
+2. If that fails or returns no owner ID, call `search_owners` with email `yujijeongdata@gmail.com` to find the owner ID.
+3. Always set `ownerId` (or the equivalent assignee field) on the task to this owner ID. **Never create a task without an assignee** — unassigned tasks do not surface in the deal board task view.
 
 Create a task on the deal record. Set the due date based on the energy and outcome of the call:
 
