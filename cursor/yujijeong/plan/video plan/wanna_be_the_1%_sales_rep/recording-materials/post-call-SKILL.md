@@ -31,6 +31,9 @@ After a sales call, handle all post-call admin in one place — deal stage check
 **Your name** *(used to sign off follow-up emails)*
 [e.g. Yuji]
 
+**Your HubSpot email** *(used as a fallback to look up your owner ID if `get_user_details` fails)*
+[e.g. yuji@yourcompany.com]
+
 ---
 
 ## Prerequisites
@@ -122,7 +125,7 @@ Do not copy the transcript verbatim. Extract only what is useful and actionable.
 
 Before creating the task, retrieve the HubSpot owner ID to assign the task:
 1. Call `get_user_details` to get the current user's HubSpot owner ID.
-2. If that fails or returns no owner ID, call `search_owners` with email `yujijeongdata@gmail.com` to find the owner ID.
+2. If that fails or returns no owner ID, call `search_owners` with the **Your HubSpot email** value from the Your Business Context section above.
 3. Always set `ownerId` (or the equivalent assignee field) on the task to this owner ID. **Never create a task without an assignee** — unassigned tasks do not surface in the deal board task view.
 
 Create a task on the deal record. Set the due date based on the energy and outcome of the call:
