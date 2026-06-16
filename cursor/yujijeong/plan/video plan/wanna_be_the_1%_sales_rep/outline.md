@@ -121,15 +121,15 @@ Skills = an admin assistant you've already onboarded.
 
 **Co-work intro — say before anything else:**
 
-"Everything in this video runs inside Co-work. If you're already using Claude, you just need to switch over to Co-work."
+"Everything in this video runs inside Co-work. If you're already using Claude, you just need to switch over to Co-work." (use the video that shows switching over from Chat to Cowork as full screen - so just add my voice over)
 
 *On screen: animation — toggle from Claude chat view to Co-work settings panel. Not code. Not a new app from scratch. Just a different mode of the same tool.*
 
-"If you haven't set it up yet, I've linked it in the description. Takes two minutes to get running."
+"If you haven't set it up yet, Go to this website claude.ai" (use the video that shows claude.ai as full screen - so just add my voice over)
 
 ---
 
-Frame the setup: "You do this once. Then it just works."
+Frame the setup: "Okay now let's set this thing up. You'll just have to do this once."
 
 *On screen: show this list as a static slide or overlay before walking through any step.*
 
@@ -138,10 +138,10 @@ Setup overview
 ──────────────────────────────
 Step 1 — Connect Firefly
 Step 2 — Connect HubSpot
-Step 3 — Connect Gmail
-Step 4 — Install skill-builder in Co-work
-Step 5 — Build /post-call using skill-builder
-Step 6 — Build /catch-up using skill-builder
+Step 3 — Connect Gmail & Calendar
+Step 4 — Install skill-creator in Co-work
+Step 5 — Build /post-call using skill-creator
+Step 6 — Build /catch-up using skill-creator
 ```
 
 **What to say on camera:** "Six steps. Three of them are just clicking Authorize. The whole thing takes under 15 minutes."
@@ -190,26 +190,26 @@ Here's what to set to Always Allow for a smooth run:
 
 "If you want to test it step by step first — see what Claude reads and what it writes before it does it — leave everything on Needs Approval for now. Run it once, watch each step, make sure you're happy with it. Then come back here and switch these over. I'll list them all in the description so you know exactly which ones to change."
 
-**Step 4 — Install skill-builder in Co-work**
+**Step 4 — Install skill-creator in Co-work**
 
-"Before we build the skills, we need one tool to help us build them — skill-builder. Good news: you install it right from inside Co-work."
+"Before we build the skills, we need one tool to help us build them — skill-creator. Good news: you install it right from inside Co-work."
 
-1. In Co-work: Settings → Skills → Add skill-builder
+1. In Co-work: Settings → Skills → Add skill-creator
 2. Install it — takes about 30 seconds
-3. Done. You now have `/skill-builder` available as a command.
+3. Done. You now have `/skill-creator` available as a command.
 
-*On screen: show the Skills settings panel inside Co-work and the skill-builder install step.*
+*On screen: show the Skills settings panel inside Co-work and the skill-creator install step.*
 
-**Step 5 — Build the /post-call skill using skill-builder**
+**Step 5 — Build the /post-call skill using skill-creator**
 
 "Now here's where it comes together. Go to the GitHub link in the description — find the post-call skill template and copy it."
 
 *On screen: open GitHub repo → find the post-call template file → copy the contents.*
 
 1. Copy the post-call template from GitHub
-2. In Co-work, type: `/skill-builder`
+2. In Co-work, type: `/skill-creator`
 3. Paste the template into the conversation
-4. In the same message (or immediately after), type your business details directly in the chat — skill-builder reads them and fills in the placeholder fields for you:
+4. In the same message (or immediately after), type your business details directly in the chat — skill-creator reads them and fills in the placeholder fields for you:
 
 *On screen: show the business context being typed into Co-work chat after the paste:*
 
@@ -221,7 +221,7 @@ financial situation if mentioned, timeline, specific models they showed interest
 objections raised
 ```
 
-5. Send it — skill-builder populates the template with your details and saves the `/post-call` skill automatically
+5. Send it — skill-creator populates the template with your details and saves the `/post-call` skill automatically
 
 *On screen: show the saved skill file with the placeholders replaced by the real business context.*
 
@@ -231,14 +231,14 @@ objections raised
 
 *On screen: open a new Co-work conversation in a second window or tab, side by side with the first.*
 
-"While skill-builder is finishing the post-call skill — open a new Co-work window. We're going to build the catch-up skill at the same time."
+"While skill-creator is finishing the post-call skill — open a new Co-work window. We're going to build the catch-up skill at the same time."
 
 **Step 6 — Build the /catch-up skill**
 
 "Same process — in the new window. Back to GitHub — copy the catch-up template."
 
 1. Copy the catch-up template from GitHub
-2. In the new Co-work window, type: `/skill-builder`
+2. In the new Co-work window, type: `/skill-creator`
 3. Paste the template
 4. Answer the same business context questions if prompted
 5. Skill-builder creates and saves `/catch-up`
@@ -249,9 +249,9 @@ objections raised
 
 ### Updating Your Skill Later
 
-"And if you ever want to tweak it — say you want to capture different details from calls, or your product has changed — you don't need to rebuild from scratch. Open Co-work, invoke `/skill-builder`, paste your skill file directly into the chat, and just tell it what you want to change. Something like: 'I want to update the business context section — change the product description and add budget range to the details I collect.' Skill-builder will make the edit and save the updated file. That's it."
+"And if you ever want to tweak it — say you want to capture different details from calls, or your product has changed — you don't need to rebuild from scratch. Open Co-work, invoke `/skill-creator`, paste your skill file directly into the chat, and just tell it what you want to change. Something like: 'I want to update the business context section — change the product description and add budget range to the details I collect.' Skill-builder will make the edit and save the updated file. That's it."
 
-*On screen: show the skill file being pasted into Co-work chat after `/skill-builder`, then a natural language instruction being typed, then the updated file being saved. Keep it under 30 seconds — this is a tip, not a full walkthrough.*
+*On screen: show the skill file being pasted into Co-work chat after `/skill-creator`, then a natural language instruction being typed, then the updated file being saved. Keep it under 30 seconds — this is a tip, not a full walkthrough.*
 
 ---
 
@@ -381,6 +381,16 @@ One read of the reasoning before you hit confirm. That's all it takes.
 
 ---
 
+## Closing (14:30 – 15:00)
+
+"Now go set this up — and be that 1% sales rep.
+
+Drop a comment and let me know how you adjusted the post-call or catch-up skill to fit your business. And if there's a specific workflow you want me to cover next, tell me — I build these based on what you actually need.
+
+If this video helped, I'll see you in the next one. We're just getting started."
+
+---
+
 ## Production Notes
 
 - **Open on outcomes, not pain** — the hook is the results screen, not the four open tabs. Show what happened before you explain how.
@@ -399,6 +409,6 @@ One read of the reasoning before you hit confirm. That's all it takes.
 ## Description Links Needed
 
 - Co-work download
-- GitHub repo (skill-builder, post-call template, catch-up template)
+- GitHub repo (skill-creator, post-call template, catch-up template)
 - HubSpot custom fields setup walkthrough (30-second guide)
 - Next video link (team pitches)
